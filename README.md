@@ -451,7 +451,7 @@
                 <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-utensils mr-3 interactive-icon"></i>晚宴場地</h2>
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                         <img src="https://www.grand-hotel.com.tw/wp-content/uploads/2023/12/DSC07889-scaled-1.jpg" 
+                         <img src="images/pic_A12-00454_1.jpg" alt="pic_A12-00454_1">
                              alt="南科總理大餐廳" 
                              class="rounded-lg shadow-md w-full h-auto object-cover img-hover-effect"
                              onerror="this.onerror=null;this.src='https://placehold.co/600x400/6E8B7A/ffffff?text=圖片載入失敗';">
