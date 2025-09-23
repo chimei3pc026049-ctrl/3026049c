@@ -423,7 +423,7 @@
                 <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-map-marker-alt mr-3 interactive-icon"></i>會議場地</h2>
                  <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                         <img src="https://share.google/images/2Pq1BfrREwncS4dHF"
+                         <img src="pic_A12-00454_1.jpg"
                              alt="國立臺灣史前文化博物館南科考古館" 
                              class="rounded-lg shadow-md w-full h-auto object-cover img-hover-effect"
                              onerror="this.onerror=null;this.src='https://placehold.co/600x400/a0b5a6/ffffff?text=圖片載入失敗';">
