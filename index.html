@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        /* 調整全站基礎字體大小 */
+        html {
+            font-size: 18px; /* 預設是 16px，您可以微調此數值來控制全站基礎字體大小 */
+        }
+
         body {
             font-family: 'Noto Sans TC', sans-serif;
         }
@@ -142,7 +147,7 @@
             margin-bottom: 0.5rem; /* mb-2 */
         }
         .accordion-header i {
-             transition: transform 0.3s ease;
+            transition: transform 0.3s ease;
         }
         .accordion-header.open i {
             transform: rotate(180deg);
@@ -208,7 +213,7 @@
             padding: 1rem 1.5rem;
             border-bottom: 1px solid #e5e7eb;
         }
-         .group-card-header h3 {
+        .group-card-header h3 {
             font-family: serif;
             font-weight: 700;
             font-size: 1.5rem;
@@ -257,18 +262,17 @@
 </head>
 <body class="bg-morandi-bg text-text-dark">
 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <!-- 主要標題 -->
-        <header class="text-center mb-12 reveal">
-            <div class="flex justify-center items-center gap-4 mb-2">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAACMs6s3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVBNkI4NDM0RkU2MDExRUJBMzgzQzNCRTg0Mjk1RkU1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVBNkI4NDM1RkU2MDExRUJBMzgzQzNCRTg0Mjk1RkU1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUE2Qjg0MzJGRTYwMTFFQkEzODNDM0JFODQyOTVGRTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUE2Qjg0MzNGRTYwMTFFQkEzODNDM0JFODQyOTVGRTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6dJ37yAAAI2ElEQVR42uzd23qiMBCG4SGFcnmIt/SgHlC91vv/P6U3hGzGnmY3OcnA+32g9UqAhP3zZh/NdhIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQRIkQ-3-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-e-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-p-e.alt="佳里奇美醫院 Logo" class="h-16 w-auto">
-                <h1 class="text-4xl md:text-5xl font-bold text-morandi-green-dark">佳里奇美醫院</h1>
-            </div>
-            <p class="text-2xl text-gray-600 mb-3">114年度主管共識營</p>
-            <p class="text-lg text-gray-500">凝聚共識，共創未來</p>
-        </header>
+    <div class="container mx-auto px-6 sm:px-8 lg:px-10 py-14">
+    <header class="text-center mb-5 reveal">
+        <div class="flex justify-center items-center mb-2">
+            <img src="F:\新增資料夾\logo-green.png" class="h-16 mr-4">
+            <h1 class="text-6xl md:text-7xl font-bold text-morandi-green-dark">佳里奇美醫院</h1>
+        </div>
+        <p class="text-4xl text-gray-600 mb-3">114年度主管共識營</p>
+        <p class="text-lg text-gray-500">凝聚共識，共創未來</p>
+    </header>
+</div>
 
-        <!-- 互動頁籤 -->
         <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10 reveal" style="transition-delay: 100ms;">
             <button class="tab-button active py-2 px-6 border-2 border-morandi-green-light text-morandi-green-dark rounded-full font-semibold shadow-sm" onclick="openTab(event, 'agenda')">議程表</button>
             <button class="tab-button py-2 px-6 border-2 border-morandi-green-light text-morandi-green-dark rounded-full font-semibold shadow-sm" onclick="openTab(event, 'conference')">會議場地</button>
@@ -278,127 +282,94 @@
             <button class="tab-button py-2 px-6 border-2 border-morandi-green-light text-morandi-green-dark rounded-full font-semibold shadow-sm" onclick="openTab(event, 'notes')">注意事項</button>
         </div>
 
-        <!-- 內容區塊 -->
         <main class="bg-white p-6 sm:p-10 rounded-2xl shadow-lg min-h-[500px]">
-            <!-- 議程表 -->
             <div id="agenda" class="content-panel active">
                 <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-calendar-alt mr-3 interactive-icon"></i>議程表</h2>
                 <div class="max-w-3xl mx-auto">
-                    <!-- 時間軸 -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <p class="timeline-time">12:45 - 13:00</p>
                         <h3 class="font-bold text-lg text-morandi-green-dark">報到</h3>
-                        <p class="text-gray-600">工作人員</p>
+                        <p class="text-gray-600"></p>
                     </div>
 
-                    <div class="timeline-category">長官致詞</div>
+                    <div class="timeline-category" style="background-color: #d1e2f3; color: #3c5a7a;">長官致詞 | 主持人 陳佳銘組長</div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <p class="timeline-time">13:00 - 13:10</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">經營決策委員會副主任委員致詞</h3>
-                        <p class="text-gray-600">林宏榮 副主委</p>
-                    </div>
-                    
-                    <div class="timeline-category">院區院長報告</div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-time">13:10 - 13:20</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">打造敏捷韌性體系 深耕台南 健康台灣</h3>
-                        <p class="text-gray-600">林宏榮 院長</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-time">13:20 - 13:30</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">以優質醫療、肩負時代任務</h3>
-                        <p class="text-gray-600">周偉倪 院長</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-time">13:30 - 13:40</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">一個有溫度、有力量、有未來的-佳里奇美醫院</h3>
+                        <p class="timeline-time">13:00 - 13:15</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">院長致詞</h3>
                         <p class="text-gray-600">田宇峯 院長</p>
                     </div>
-
-                    <div class="timeline-category">業務報告</div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <p class="timeline-time">13:45 - 14:00</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">醫院財務報告</h3>
-                        <p class="text-gray-600">徐亞蘭 主任</p>
+                        <p class="timeline-time">13:15 - 13:20</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">經營決策委員會副主委致詞</h3>
+                        <p class="text-gray-600">林宏榮 副主委</p>
+                    </div>
+
+                    <div class="timeline-category" style="background-color: #d1e2f3; color: #3c5a7a;">分組報告 | 主持人 王哲川 副院長</div>
+                 
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <p class="timeline-time">13:20 - 13:40</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">第一組(C)：擴大長照服務、深耕社區醫療 | 主持人：劉憶萍 部長</h3>
+                        <p class="text-gray-600">主講人：</p>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <p class="timeline-time">14:00 - 14:15</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">健保政策報告</h3>
-                        <p class="text-gray-600">王敏容 高專</p>
+                        <p class="timeline-time">13:40 - 14:00</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">第二組(A)：推動智慧醫療、優化職場環境 | 主持人：邵詩媛 行政副院長</h3>
+                        <p class="text-gray-600">主講人：</p>
                     </div>
-                     <div class="timeline-item">
+                    <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <p class="timeline-time">14:15 - 14:30</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">人力資源報告</h3>
-                        <p class="text-gray-600">李敏禎 處長</p>
+                        <p class="timeline-time">14:00 - 14:20</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">第三組(R)：強化醫療設備、韌性急重照護 | 主持人：朱逢源 部長</h3>
+                        <p class="text-gray-600">主講人：</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <p class="timeline-time">14:20 - 14:40</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">第四組(E)：以病人為中心、提供良善醫療 | 主持人：洪順興 部長</h3>
+                        <p class="text-gray-600">主講人：</p>
+                    </div>
+                    <div class="timeline-category" style="background-color: #d1e2f3; color: #3c5a7a;">綜合討論 | 主持人：田宇峯 院長</div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <p class="timeline-time">14:40 - 15:00</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">總結&綜合討論</h3>
+                        <p class="text-gray-600"></p>
                     </div>
 
-                     <div class="timeline-item">
+                    <div class="timeline-item">
                         <div class="timeline-dot" style="background-color: #e5a743;"></div>
-                        <p class="timeline-time">14:30 - 14:50</p>
-                        <h3 class="font-bold text-lg" style="color: #c0872c;">團體照、茶點時間</h3>
+                        <p class="timeline-time">15:00 - 15:30</p>
+                        <h3 class="font-bold text-lg" style="color: #c0872c;">茶點時間</h3>
                     </div>
 
-                    <div class="timeline-category">專題報告</div>
+                    <div class="timeline-category" style="background-color: #d1e2f3; color: #3c5a7a;">特別演講 | 主持人：邵詩媛 副院長</div>
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-time">14:50 - 15:20</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">3院區癌症醫療整合規劃</h3>
-                        <p class="text-gray-600">黃文聰 副院長</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-time">15:20 - 15:50</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">共創健康未來-院區整合的願景與實踐</h3>
-                        <p class="text-gray-600">黃建元 主任</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-time">15:50 - 16:00</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">總院 ESG執行政策分享</h3>
-                        <p class="text-gray-600">黃文良 主任</p>
-                    </div>
-                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-time">16:00 - 16:10</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">從公園的綠，到博物館的美 －打造低碳永續醫院</h3>
-                        <p class="text-gray-600">張正蓉 高專</p>
-                    </div>
-                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-time">16:10 - 16:20</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">佳里院區 ESG執行政策分享</h3>
-                        <p class="text-gray-600">楊竣欽 主任</p>
-                    </div>
-
-                    <div class="timeline-category" style="background-color: #d1e2f3; color: #3c5a7a;">特別演講</div>
-                     <div class="timeline-item">
                         <div class="timeline-dot" style="background-color: #4a86e8;"></div>
-                        <p class="timeline-time">16:20 - 17:10</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">從零基礎建立AI輔助決策軍團</h3>
-                        <p class="text-gray-600">廖家德 部長</p>
+                        <p class="timeline-time">15:30 - 17:00</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">史前與當代的共存 考古探索與解密</h3>
+                        <p class="text-gray-600">主講人：</p>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <p class="timeline-time">17:10 - 17:40</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">綜合討論</h3>
+                        <p class="timeline-time">17:00 - 17:30</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">大合照、南科醫院搶先看、賦歸</h3>
+                        <p class="text-gray-600"></p>
                     </div>
+                    
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <p class="timeline-time">17:40</p>
-                        <h3 class="font-bold text-lg text-morandi-green-dark">賦歸</h3>
+                        <p class="timeline-time">18:00 - 20:00</p>
+                        <h3 class="font-bold text-lg text-morandi-green-dark">晚宴 | 南科總理大餐廳</h3>
+                        <p class="text-gray-600"></p>
                     </div>
                 </div>
                 
-                <!-- Gemini AI 功能區塊 -->
                 <div class="mt-10 pt-8 border-t border-gray-200 text-center">
                     <h3 class="text-xl font-bold text-morandi-green-dark mb-3 flex items-center justify-center">
                         <span class="mr-2">😂</span> 輕鬆一下
@@ -411,28 +382,25 @@
                         <div class="spinner"></div>
                     </div>
                     <div id="jokesContainer" class="mt-6 text-left max-w-2xl mx-auto space-y-3">
-                        <!-- Generated jokes will be displayed here -->
-                    </div>
+                        </div>
                     <div id="errorContainer" class="hidden mt-4 text-red-500 font-semibold"></div>
                 </div>
                 
             </div>
 
-            <!-- 會議場地 -->
             <div id="conference" class="content-panel">
                 <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-map-marker-alt mr-3 interactive-icon"></i>會議場地</h2>
-                 <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                         <img src="https://share.google/images/2Pq1BfrREwncS4dHF"
-                             alt="國立臺灣史前文化博物館南科考古館" 
-                             class="rounded-lg shadow-md w-full h-auto object-cover img-hover-effect"
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/a0b5a6/ffffff?text=圖片載入失敗';">
+                        <img src="F:\新增資料夾\pic_A12-00454_1.jpg" 
+                                alt="國立臺灣史前文化博物館南科考古館 四樓國際會議廳" 
+                                class="rounded-lg shadow-md w-full h-auto object-cover img-hover-effect">
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-morandi-green-dark mb-2">國立臺灣史前文化博物館南科考古館</h3>
-                        <p class="text-gray-600 mb-4">這座獲得多項國際認證的綠建築，將以其獨特的設計與綠意盎然的環境，為本次共識營提供一個充滿啟發與創意的空間。</p>
+                        <p class="text-gray-600 mb-4">「國立臺灣史前文化博物館南科考古館」是一座直接蓋在考古遺址上的博物館，專門典藏並展示當初開發科學園區時所發現的珍貴史前文物，讓我們得以一窺數千年前臺灣南部的生活樣貌。</p>
                         <p class="text-gray-600 mb-4"><i class="fas fa-location-arrow mr-2 text-morandi-green"></i>地址：台南市新市區南科三路10號</p>
-                        <a href="https://maps.google.com/?q=國立臺灣史前文化博物館南科考古館" target="_blank" class="inline-block bg-morandi-green text-white font-bold py-2 px-4 rounded-lg hover:bg-morandi-green-dark transition duration-300">
+                        <a href="https://maps.app.goo.gl/K6hQd2n4x9qXq8hZ9" target="_blank" class="inline-block bg-morandi-green text-white font-bold py-2 px-4 rounded-lg hover:bg-morandi-green-dark transition duration-300">
                             <i class="fas fa-map mr-2"></i>查看地圖
                         </a>
                         <div class="mt-6 p-4 bg-green-50 border-l-4 border-morandi-green rounded-r-lg">
@@ -446,32 +414,26 @@
                 </div>
             </div>
 
-            <!-- 晚宴場地 -->
             <div id="dinner" class="content-panel">
                 <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-utensils mr-3 interactive-icon"></i>晚宴場地</h2>
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                         <img src="https://www.grand-hotel.com.tw/wp-content/uploads/2023/12/DSC07889-scaled-1.jpg" 
-                             alt="南科總理大餐廳" 
-                             class="rounded-lg shadow-md w-full h-auto object-cover img-hover-effect"
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/6E8B7A/ffffff?text=圖片載入失敗';">
+                        <img src="F:\新增資料夾\1382375724-3290312444.jpg" class="rounded-lg shadow-md w-full h-auto object-cover img-hover-effect">
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-morandi-green-dark mb-2">南科總理大餐廳</h3>
                         <p class="text-gray-600 mb-4">晚宴將於南科總理大餐廳舉行，提供精緻佳餚與舒適的用餐環境，讓您在忙碌的議程後，能徹底放鬆，享受美食與交流的愜意時光。</p>
                         <p class="text-gray-600 mb-4"><i class="fas fa-location-arrow mr-2 text-morandi-green"></i>地址：台南市新市區南科三路15號</p>
-                         <a href="https://maps.google.com/?q=南科總理大餐廳" target="_blank" class="inline-block bg-morandi-green text-white font-bold py-2 px-4 rounded-lg hover:bg-morandi-green-dark transition duration-300">
+                        <a href="https://maps.app.goo.gl/9T2rQdE6mPz2Fh618" target="_blank" class="inline-block bg-morandi-green text-white font-bold py-2 px-4 rounded-lg hover:bg-morandi-green-dark transition duration-300">
                             <i class="fas fa-map mr-2"></i>查看地圖
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- 分組名單 -->
             <div id="groups" class="content-panel">
                 <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-users mr-3 interactive-icon"></i>分組名單</h2>
                 
-                <!-- 查詢功能 -->
                 <div class="mb-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
                     <h3 class="text-lg font-bold text-morandi-green-dark mb-3 text-center">查詢您的組別</h3>
                     <div class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
@@ -480,11 +442,10 @@
                             <i class="fas fa-search mr-1"></i> 查詢
                         </button>
                     </div>
-                    <div id="searchResult" class="mt-4 text-center font-semibold text-lg min-h-[1.5rem]"></div>
+                    <div id="searchResult" class="mt-4 text-center font-semibold text-lg min-h-[3rem]"></div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Group C -->
                     <div id="group-card-c" class="group-card">
                         <div class="group-card-header bg-gray-50 border-l-4 border-special-blue">
                             <h3 class="text-special-blue">Community & Continuity of Care</h3>
@@ -496,25 +457,23 @@
                                 <li>劉憶萍 部長</li>
                             </ul>
                             <h4 class="font-bold text-gray-700 mb-2">組員</h4>
-                             <button class="text-morandi-green font-semibold hover:underline" onclick="openModal('modal-c')">查看完整名單</button>
+                            <button class="text-morandi-green font-semibold hover:underline" onclick="openModal('modal-c')">查看完整名單</button>
                         </div>
                     </div>
-                    <!-- Group A -->
                     <div id="group-card-a" class="group-card">
                         <div class="group-card-header bg-gray-50 border-l-4 border-morandi-green">
-                           <h3 class="text-morandi-green-dark">AI Smart Healthcare & Workplace</h3>
-                           <p class="text-gray-500 text-sm mt-1">推動智慧醫療 優化職場環境</p>
+                            <h3 class="text-morandi-green-dark">AI Smart Healthcare & Workplace</h3>
+                            <p class="text-gray-500 text-sm mt-1">推動智慧醫療 優化職場環境</p>
                         </div>
                         <div class="group-card-body">
-                           <h4 class="font-bold text-gray-700 mb-2">組長</h4>
+                            <h4 class="font-bold text-gray-700 mb-2">組長</h4>
                             <ul class="space-y-1 text-gray-600 mb-4">
                                 <li>邵詩媛 行政副院長</li>
                             </ul>
                             <h4 class="font-bold text-gray-700 mb-2">組員</h4>
-                             <button class="text-morandi-green font-semibold hover:underline" onclick="openModal('modal-a')">查看完整名單</button>
+                            <button class="text-morandi-green font-semibold hover:underline" onclick="openModal('modal-a')">查看完整名單</button>
                         </div>
                     </div>
-                    <!-- Group R -->
                     <div id="group-card-r" class="group-card">
                         <div class="group-card-header bg-gray-50 border-l-4 border-morandi-green">
                             <h3 class="text-morandi-green-dark">Resilient Emergency & Medical System</h3>
@@ -526,32 +485,36 @@
                                 <li>朱逢源 部長</li>
                             </ul>
                             <h4 class="font-bold text-gray-700 mb-2">組員</h4>
-                             <button class="text-morandi-green font-semibold hover:underline" onclick="openModal('modal-r')">查看完整名單</button>
+                            <button class="text-morandi-green font-semibold hover:underline" onclick="openModal('modal-r')">查看完整名單</button>
                         </div>
                     </div>
-                    <!-- Group E -->
                     <div id="group-card-e" class="group-card">
                         <div class="group-card-header bg-gray-50 border-l-4 border-special-blue">
                             <h3 class="text-special-blue">Empathetic & Patient-Centered Care</h3>
                             <p class="text-gray-500 text-sm mt-1">以病人為中心 提供良善醫療</p>
                         </div>
                         <div class="group-card-body">
-                           <h4 class="font-bold text-gray-700 mb-2">組長</h4>
+                            <h4 class="font-bold text-gray-700 mb-2">組長</h4>
                             <ul class="space-y-1 text-gray-600 mb-4">
                                 <li>洪順興 部長</li>
                             </ul>
                             <h4 class="font-bold text-gray-700 mb-2">組員</h4>
-                             <button class="text-morandi-green font-semibold hover:underline" onclick="openModal('modal-e')">查看完整名單</button>
+                            <button class="text-morandi-green font-semibold hover:underline" onclick="openModal('modal-e')">查看完整名單</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 交通指南 -->
             <div id="transport" class="content-panel">
-                 <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-bus-alt mr-3 interactive-icon"></i>交通指南</h2>
-                 <div class="bg-gray-50 p-4 rounded-lg mb-6">
-                    <img src="https://i.imgur.com/39aE9vM.jpeg" alt="交通指南地圖" class="rounded-lg shadow-md w-full h-auto">
+                <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-bus-alt mr-3 interactive-icon"></i>交通指南</h2>
+                <div class="rounded-lg mb-6 overflow-hidden shadow-md">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.752150125816!2d120.2858063154117!3d23.1064899849104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7fbe28212957%3A0x2646c8585d820635!2z5ZyL56uL6Ie654Gj5Y-k5Y2X5paH5YyW5Y2A5Y2O5Y2X56CC6aSo562W考古館!5e0!3m2!1szh-TW!2stw!4v1678886400000!5m2!1szh-TW!2stw" 
+                        class="w-full h-96 border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
                 <div class="space-y-4">
                     <div class="border border-gray-200 rounded-lg overflow-hidden">
@@ -584,16 +547,15 @@
                 </div>
             </div>
             
-            <!-- 注意事項 -->
             <div id="notes" class="content-panel">
-                 <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-exclamation-circle mr-3 interactive-icon"></i>注意事項</h2>
+                <h2 class="text-2xl font-bold text-morandi-green mb-6 flex items-center"><i class="fas fa-exclamation-circle mr-3 interactive-icon"></i>注意事項</h2>
                 <div class="text-gray-700 space-y-4 notes-section">
-                    <p>歡迎各位主管參與114年跨院區高階主管共識會議，當日活動事項說明如下：</p>
+                    <p>歡迎各位主管參與114年佳里院區主管共識營，當日活動事項說明如下：</p>
                     
                     <div>
                         <h4>一、活動說明</h4>
                         <ul class="list-none space-y-2 pl-2">
-                            <li><strong>會議時間：</strong>114年11月22日(六) 13:00-20:30。</li>
+                            <li><strong>會議時間：</strong>114年11月22日(六) 13:00-20:00。</li>
                             <li><strong>會議地點：</strong>國立臺灣史前文化博物館南科考古館</li>
                             <li><strong>晚宴地點：</strong>南科總理大餐廳 (18:00~20:00)</li>
                         </ul>
@@ -641,11 +603,10 @@
         </main>
         
         <footer class="text-center mt-12 text-gray-400 text-sm">
-            <p>&copy; 114年 佳里奇美醫院 版權所有</p>
+            <p>© 佳里奇美醫院共識營工作小組 版權所有</p>
         </footer>
     </div>
 
-    <!-- Modals for Group Lists -->
     <div id="modal-c" class="modal-overlay" onclick="closeModal('modal-c')">
         <div class="modal-container" onclick="event.stopPropagation()">
             <div class="p-6">
@@ -654,7 +615,7 @@
                         <h3 class="text-2xl font-bold text-special-blue">C組名單</h3>
                         <p class="text-gray-600">擴大長照服務 深耕社區醫療</p>
                     </div>
-                    <button onclick="closeModal('modal-c')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">&times;</button>
+                    <button onclick="closeModal('modal-c')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">×</button>
                 </div>
                 <table class="w-full text-left table-auto">
                     <thead class="bg-gray-50">
@@ -665,7 +626,7 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200">
-                        <tr class="hover:bg-gray-50"><td class="p-3">血液透析護理</td><td class="p-3">蕭慧莉</td><td class="p-3">護理長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">血液透析護理</td><td class="p-3">蕭蕙莉</td><td class="p-3">護理長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">護理部</td><td class="p-3">劉憶萍</td><td class="p-3">部長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">護理部</td><td class="p-3">黃慧娟</td><td class="p-3">專員</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">7B病房</td><td class="p-3">洪淑英</td><td class="p-3">護理長(N4)</td></tr>
@@ -674,14 +635,14 @@
                         <tr class="hover:bg-gray-50"><td class="p-3">7A病房</td><td class="p-3">洪婉茹</td><td class="p-3">護理長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">6A病房</td><td class="p-3">黃湘雲</td><td class="p-3">護理長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">護理部-輸送組</td><td class="p-3">蘇淑芳</td><td class="p-3">小組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">居家護理所</td><td class="p-3">沈佳容</td><td class="p-3">代理護理長(N4)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">3A病房</td><td class="p-3">李佳明</td><td class="p-3">代理護理長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">居家護理所</td><td class="p-3">沈水雲</td><td class="p-3">代理護理長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">3A病房</td><td class="p-3">李佳容</td><td class="p-3">代理護理長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">家庭醫學科</td><td class="p-3">杜明道</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">家庭醫學科</td><td class="p-3">柯俊宏</td><td class="p-3">主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">7B病房</td><td class="p-3">黃百春</td><td class="p-3">小組長(N3)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">3A病房</td><td class="p-3">何佳宜</td><td class="p-3">小組長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">護理部</td><td class="p-3">孔雅雯</td><td class="p-3">副護理長(N4)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">護理部</td><td class="p-3">林俊瑋</td><td class="p-3">督導</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">護理部</td><td class="p-3">林俊璋</td><td class="p-3">督導</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">5A病房</td><td class="p-3">曾雅鈴</td><td class="p-3">副護理長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">血液透析護理</td><td class="p-3">蔡麗華</td><td class="p-3">小組長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">5A病房</td><td class="p-3">吳佩書</td><td class="p-3">小組長(N3)</td></tr>
@@ -689,16 +650,16 @@
                         <tr class="hover:bg-gray-50"><td class="p-3">6A病房</td><td class="p-3">吳佩蓉</td><td class="p-3">小組長(N3)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">7B病房</td><td class="p-3">吳宜家</td><td class="p-3">副護理長(N3)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">家庭醫學科</td><td class="p-3">周小軒</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">7B病房</td><td class="p-3">莊月琴</td><td class="p-3">小組長(N2)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">6A病房</td><td class="p-3">蔡家綺</td><td class="p-3">小組長(N2)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">7A病房</td><td class="p-3">蔡諪諼</td><td class="p-3">小組長(N2)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">7B病房</td><td class="p-3">莊月慈</td><td class="p-3">小組長(N2)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">6A病房</td><td class="p-3">許家綺</td><td class="p-3">小組長(N2)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">7A病房</td><td class="p-3">蔡語涵</td><td class="p-3">小組長(N2)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">7B病房</td><td class="p-3">許馨文</td><td class="p-3">小組長(N3)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">護理部-內科</td><td class="p-3">高婉菁</td><td class="p-3">組長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">護理部-內科</td><td class="p-3">方月貞</td><td class="p-3">小組長(NP1)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">許惠芳</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">門診</td><td class="p-3">陳燕芬</td><td class="p-3">小組長(N2)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">舒惠芳</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">門診</td><td class="p-3">陳燕鈴</td><td class="p-3">小組長(N2)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">門診</td><td class="p-3">蕭琇丰</td><td class="p-3">小組長(N3)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">門診</td><td class="p-3">張翠茹</td><td class="p-3">代理護理長(N3)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">門診</td><td class="p-3">張蕙茹</td><td class="p-3">代理護理長(N3)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">職能治療組</td><td class="p-3">林雁飛</td><td class="p-3">組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">物理治療組</td><td class="p-3">張敬忠</td><td class="p-3">組長</td></tr>
                     </tbody>
@@ -708,13 +669,13 @@
     </div>
     <div id="modal-a" class="modal-overlay" onclick="closeModal('modal-a')">
         <div class="modal-container" onclick="event.stopPropagation()">
-             <div class="p-6">
+            <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
-                     <div>
+                    <div>
                         <h3 class="text-2xl font-bold text-morandi-green-dark">A組名單</h3>
                         <p class="mb-4 text-gray-600">推動智慧醫療 優化職場環境</p>
                     </div>
-                    <button onclick="closeModal('modal-a')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">&times;</button>
+                    <button onclick="closeModal('modal-a')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">×</button>
                 </div>
                 <table class="w-full text-left table-auto">
                     <thead class="bg-gray-50">
@@ -736,33 +697,33 @@
                         <tr class="hover:bg-gray-50"><td class="p-3">病歷資訊管理室</td><td class="p-3">陳惠琦</td><td class="p-3">小組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">醫療事務室-住院服務組</td><td class="p-3">王秋蓮</td><td class="p-3">組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">總務室-出納組</td><td class="p-3">葉雪法</td><td class="p-3">小組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">院長室</td><td class="p-3">邱仲慶</td><td class="p-3">副院長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">院長室</td><td class="p-3">邵詩媛</td><td class="p-3">副院長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">醫療事務室-醫療服務組</td><td class="p-3">蔡佩君</td><td class="p-3">小組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">工務室</td><td class="p-3">蔡佩欣</td><td class="p-3">主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">工務室</td><td class="p-3">楊竣欽</td><td class="p-3">主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">資訊室</td><td class="p-3">黃士哲</td><td class="p-3">組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">醫療事務室-醫療服務組</td><td class="p-3">謝永豐</td><td class="p-3">副組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">醫療事務室-醫療服務組</td><td class="p-3">謝麗雯</td><td class="p-3">副組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">工務室</td><td class="p-3">黃永男</td><td class="p-3">主任</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">牙科</td><td class="p-3">于思悅</td><td class="p-3">主任</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">牙科</td><td class="p-3">王思微</td><td class="p-3">護理長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">牙科</td><td class="p-3">于錫倩</td><td class="p-3">主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">牙科</td><td class="p-3">王思薇</td><td class="p-3">護理長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">公共事務室</td><td class="p-3">林正雄</td><td class="p-3">專員</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">人力資源部</td><td class="p-3">曾靜珍</td><td class="p-3">副組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">社區發展組</td><td class="p-3">吳静儀</td><td class="p-3">行政</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">人力資源部</td><td class="p-3">曾毓珍</td><td class="p-3">副組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">社區發展組</td><td class="p-3">吳靜儀</td><td class="p-3">行政</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">眼科</td><td class="p-3">蕭景星</td><td class="p-3">主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">社會服務部</td><td class="p-3">林佳琪</td><td class="p-3">副組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">總務室</td><td class="p-3">陳佳飴</td><td class="p-3">組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">總務室</td><td class="p-3">陳佳銘</td><td class="p-3">組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">企劃組</td><td class="p-3">紀宗瀚</td><td class="p-3">專員</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">企劃組</td><td class="p-3">黃秀玲</td><td class="p-3">組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">資材室-採購組</td><td class="p-3">林欣縈</td><td class="p-3">小組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">資材室-採購組</td><td class="p-3">林欣蓁</td><td class="p-3">小組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">兒科</td><td class="p-3">陳昱瑾</td><td class="p-3">科主任</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">婦產部</td><td class="p-3">關蘭馨</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">婦產部</td><td class="p-3">關哲彥</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">安全衛生管理室</td><td class="p-3">陳怡靜</td><td class="p-3">小組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">醫療事務室-住院服務組</td><td class="p-3">劉婉瑜</td><td class="p-3">小組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">醫療事務室-住院服務組</td><td class="p-3">劉婉榆</td><td class="p-3">小組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">工務室</td><td class="p-3">李建賢</td><td class="p-3">小組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">牙科</td><td class="p-3">林曉傑</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">復健科</td><td class="p-3">林芯如</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">復健科</td><td class="p-3">林益廷</td><td class="p-3">主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">牙科</td><td class="p-3">林靖傑</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">復健科</td><td class="p-3">林芯如</td><td class="p-3">小組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">復健科</td><td class="p-3">林彣芷</td><td class="p-3">主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">復健科</td><td class="p-3">羅元廷</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">復健科</td><td class="p-3">唐怡君</td><td class="p-3">小組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">復健科</td><td class="p-3">唐愉君</td><td class="p-3">小組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">復健科</td><td class="p-3">李林富</td><td class="p-3">總技師</td></tr>
                     </tbody>
                 </table>
@@ -773,14 +734,14 @@
         <div class="modal-container" onclick="event.stopPropagation()">
             <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
-                     <div>
+                    <div>
                         <h3 class="text-2xl font-bold text-morandi-green-dark">R組名單</h3>
                         <p class="mb-4 text-gray-600">強化醫療設備 韌性急重照護</p>
                     </div>
-                    <button onclick="closeModal('modal-r')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">&times;</button>
+                    <button onclick="closeModal('modal-r')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">×</button>
                 </div>
                 <table class="w-full text-left table-auto">
-                     <thead class="bg-gray-50">
+                    <thead class="bg-gray-50">
                         <tr>
                             <th class="p-3">科別名稱</th>
                             <th class="p-3">姓名</th>
@@ -788,46 +749,46 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200">
-                        <tr class="hover:bg-gray-50"><td class="p-3">急診室</td><td class="p-3">姚春枝</td><td class="p-3">小組長(N2)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">心導管室</td><td class="p-3">唐惠庭</td><td class="p-3">組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">急診室</td><td class="p-3">蘇春枝</td><td class="p-3">小組長(N2)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">心導管室</td><td class="p-3">唐國庭</td><td class="p-3">組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">營養科</td><td class="p-3">李宜樺</td><td class="p-3">組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">急診室</td><td class="p-3">楊曉鐘</td><td class="p-3">護理長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">急診室</td><td class="p-3">楊曉鏵</td><td class="p-3">護理長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">急診室</td><td class="p-3">陳美華</td><td class="p-3">小組長(N3)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">姜郁成</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">護理部-急診</td><td class="p-3">陳純純</td><td class="p-3">小組長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">護理部-急診</td><td class="p-3">陳瑩純</td><td class="p-3">小組長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">郭炳讓</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">腎臟科-透析室</td><td class="p-3">郭育淇</td><td class="p-3">科主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">急診室</td><td class="p-3">曾麗娥</td><td class="p-3">副護理長(N4)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">感染管制組</td><td class="p-3">黃妙玉</td><td class="p-3">小組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">感染管制組</td><td class="p-3">黃小容</td><td class="p-3">小組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">呼吸治療組</td><td class="p-3">陳妙玉</td><td class="p-3">組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">心臟血管內科</td><td class="p-3">李明練</td><td class="p-3">科主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">心臟血管內科</td><td class="p-3">李畊緯</td><td class="p-3">科主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">急救醫學科</td><td class="p-3">陳義憲</td><td class="p-3">科主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">加護病房</td><td class="p-3">歐軒甫</td><td class="p-3">主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">藥劑科</td><td class="p-3">黃慧娟</td><td class="p-3">組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">內科部</td><td class="p-3">廖光昭</td><td class="p-3">部長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">宋國華</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">盧惟瑄</td><td class="p-3">備任主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">檢查室</td><td class="p-3">丁思惠</td><td class="p-3">組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">血液透析室</td><td class="p-3">黃崇田</td><td class="p-3">小組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">藥劑科</td><td class="p-3">黃靖鳳</td><td class="p-3">代理總藥師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">內科部</td><td class="p-3">廖光明</td><td class="p-3">部長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">宋國漳</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">盧稚涵</td><td class="p-3">備任主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">檢查室</td><td class="p-3">丁恩惠</td><td class="p-3">組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">血液透析室</td><td class="p-3">黃榮田</td><td class="p-3">小組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">藥劑科</td><td class="p-3">黃曉鳳</td><td class="p-3">代理總藥師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">藥劑科</td><td class="p-3">李佩汶</td><td class="p-3">小組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">朱逢源</td><td class="p-3">部長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">神經內科</td><td class="p-3">陳南丞</td><td class="p-3">科主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">感染科</td><td class="p-3">陳宏睿</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">呼吸治療組</td><td class="p-3">黃柏豪</td><td class="p-3">小組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">急診室</td><td class="p-3">劉怡茹</td><td class="p-3">小組長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">急診室</td><td class="p-3">劉怡姍</td><td class="p-3">小組長(N4)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">陳又銘</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">神經內科</td><td class="p-3">陳日為</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">心臟血管內科</td><td class="p-3">林哲光</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">腎臟科-透析室</td><td class="p-3">王弘偉</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">腎臟科-透析室</td><td class="p-3">林建麟</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">林國彰</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">腎臟科-透析室</td><td class="p-3">林煒健</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">李國彰</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">急診醫學部</td><td class="p-3">蘇江翰</td><td class="p-3">備任主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">心臟血管內科</td><td class="p-3">涂冠杰</td><td class="p-3">備任主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">加護醫學部</td><td class="p-3">曾崇賦</td><td class="p-3">備任主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">加護醫學部</td><td class="p-3">曾榮賦</td><td class="p-3">備任主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">院長室</td><td class="p-3">田宇峯</td><td class="p-3">院長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">院長室</td><td class="p-3">王哲川</td><td class="p-3">副院長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">院長室</td><td class="p-3">王鶴文</td><td class="p-3">顧問</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">院長室</td><td class="p-3">王覲文</td><td class="p-3">顧問</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -837,14 +798,14 @@
         <div class="modal-container" onclick="event.stopPropagation()">
             <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
-                     <div>
+                    <div>
                         <h3 class="text-2xl font-bold text-special-blue">E組名單</h3>
                         <p class="mb-4 text-gray-600">以病人為中心 提供良善醫療</p>
                     </div>
-                    <button onclick="closeModal('modal-e')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">&times;</button>
+                    <button onclick="closeModal('modal-e')" class="text-gray-400 hover:text-gray-700 text-2xl font-bold">×</button>
                 </div>
                 <table class="w-full text-left table-auto">
-                     <thead class="bg-gray-50">
+                    <thead class="bg-gray-50">
                         <tr>
                             <th class="p-3">科別名稱</th>
                             <th class="p-3">姓名</th>
@@ -852,49 +813,49 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200">
-                        <tr class="hover:bg-gray-50"><td class="p-3">開刀房</td><td class="p-3">陳美伶</td><td class="p-3">護理長(N4)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">檢驗科</td><td class="p-3">彭姜姍</td><td class="p-3">總技師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">開刀房</td><td class="p-3">彭美惠</td><td class="p-3">護理長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">檢驗科</td><td class="p-3">陳姿伶</td><td class="p-3">總技師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">2樓加護病房</td><td class="p-3">鄭雅馨</td><td class="p-3">副護理長(N3)</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">2樓加護病房</td><td class="p-3">吳佩宜</td><td class="p-3">護理長(N4)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">開刀房</td><td class="p-3">謝明宏</td><td class="p-3">小組長(N4)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">吳素清</td><td class="p-3">主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">開刀房</td><td class="p-3">謝安妮</td><td class="p-3">小組長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">吳泰清</td><td class="p-3">主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">外科部</td><td class="p-3">洪順興</td><td class="p-3">部長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">檢驗科</td><td class="p-3">李振福</td><td class="p-3">小組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">許秀浮</td><td class="p-3">代理總技師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">護理部-外科</td><td class="p-3">吳秀浮</td><td class="p-3">小組長(NP1)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">麻醉部</td><td class="p-3">陳富期</td><td class="p-3">主任</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">麻醉部</td><td class="p-3">林慧君</td><td class="p-3">護理長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">吾秀蒂</td><td class="p-3">代理總技師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">護理部-外科</td><td class="p-3">許雯萍</td><td class="p-3">小組長(NP1)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">麻醉部</td><td class="p-3">康富期</td><td class="p-3">主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">麻醉部</td><td class="p-3">林慧蓉</td><td class="p-3">護理長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">一般及消化系外科</td><td class="p-3">曾建仁</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">一般及消化系外科</td><td class="p-3">陳俊良</td><td class="p-3">科主任</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">神經外科</td><td class="p-3">林佳珍</td><td class="p-3">科主任</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">開刀房</td><td class="p-3">林思維</td><td class="p-3">小組長(N3)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">泌尿外科</td><td class="p-3">胡慈容</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">胃腸肝膽科</td><td class="p-3">高宗典</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">骨科</td><td class="p-3">余亮興</td><td class="p-3">科主任</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">胃腸肝膽科</td><td class="p-3">楊建邦</td><td class="p-3">科主任</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">骨科</td><td class="p-3">陳邦碩</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">內分泌新陳代謝科</td><td class="p-3">施龍興</td><td class="p-3">科主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">神經外科</td><td class="p-3">林思維</td><td class="p-3">科主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">開刀房</td><td class="p-3">林佳珍</td><td class="p-3">小組長(N3)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">泌尿外科</td><td class="p-3">胡恭寧</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">胃腸肝膽科</td><td class="p-3">高旭儒</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">骨科</td><td class="p-3">余宗興</td><td class="p-3">科主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">胃腸肝膽科</td><td class="p-3">楊道欣</td><td class="p-3">科主任</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">骨科</td><td class="p-3">施貿翔</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">內分泌新陳代謝科</td><td class="p-3">陳郁麗</td><td class="p-3">科主任</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">神經外科</td><td class="p-3">廖仁傑</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">教學研究組</td><td class="p-3">余守純</td><td class="p-3">組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">2樓加護病房</td><td class="p-3">方惠娟</td><td class="p-3">小組長(N4)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">內分泌新陳代謝科</td><td class="p-3">蕭龍騰</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">一般及消化系外科</td><td class="p-3">江瑞益</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">張玉鳳</td><td class="p-3">組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">鄭伊婷</td><td class="p-3">小組長</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">麻醉部</td><td class="p-3">郭宗瑋</td><td class="p-3">小組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">2樓加護病房</td><td class="p-3">方惠姍</td><td class="p-3">小組長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">內分泌新陳代謝科</td><td class="p-3">劉欣岳</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">一般及消化系外科</td><td class="p-3">韓龍疇</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">江瑞益</td><td class="p-3">組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">張鼎晨</td><td class="p-3">小組長</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">麻醉部</td><td class="p-3">郭玉婷</td><td class="p-3">小組長</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">骨科</td><td class="p-3">陳春丞</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">泌尿外科</td><td class="p-3">陳國銘</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">手術室專責護理</td><td class="p-3">黃玉雯</td><td class="p-3">小組長(N3)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">2樓加護病房</td><td class="p-3">李育緯</td><td class="p-3">小組長(N2)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">麻醉部</td><td class="p-3">黃育菁</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">2樓加護病房</td><td class="p-3">曾加偉</td><td class="p-3">副護理長(N2)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">胃腸肝膽科</td><td class="p-3">簡劭君</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">護理部-內科</td><td class="p-3">張明周</td><td class="p-3">小組長(N4)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">胸腔內科</td><td class="p-3">鄭鴻卿</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">神經外科</td><td class="p-3">鄭鴻卿</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">泌尿外科</td><td class="p-3">陳經國</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">手術室專責護理</td><td class="p-3">鄭宛瑢</td><td class="p-3">小組長(N3)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">2樓加護病房</td><td class="p-3">黃玉婷</td><td class="p-3">小組長(N2)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">麻醉部</td><td class="p-3">李育諭</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">2樓加護病房</td><td class="p-3">曾加儒</td><td class="p-3">副護理長(N2)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">胃腸肝膽科</td><td class="p-3">閻姵君</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">護理部-內科</td><td class="p-3">曾妍鳳</td><td class="p-3">小組長(N4)</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">胸腔內科</td><td class="p-3">張明閎</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">神經外科</td><td class="p-3">鄭鴻翔</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">2樓加護病房</td><td class="p-3">劉家瑄</td><td class="p-3">小組長(N4)</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">心臟血管外科</td><td class="p-3">洪維謙</td><td class="p-3">主治醫師</td></tr>
-                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">楊柏竣</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">心臟血管外科</td><td class="p-3">洪綸吾</td><td class="p-3">主治醫師</td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-3">放射診斷科</td><td class="p-3">楊傑宇</td><td class="p-3">主治醫師</td></tr>
                         <tr class="hover:bg-gray-50"><td class="p-3">骨科</td><td class="p-3">王柏竣</td><td class="p-3">備任主治醫師</td></tr>
                     </tbody>
                 </table>
@@ -953,7 +914,7 @@
             }, { threshold: 0.1 });
             revealElements.forEach(el => revealObserver.observe(el));
 
-            // Gemini AI 功能邏輯
+            // Gemini AI 功能邏輯 (此處為示意，實際使用需替換為您的 API Key)
             const generateBtn = document.getElementById('generateJokesBtn');
             const jokesContainer = document.getElementById('jokesContainer');
             const loadingSpinner = document.getElementById('loadingSpinner');
@@ -966,8 +927,29 @@
                 loadingSpinner.classList.remove('hidden');
                 generateBtn.disabled = true;
 
-                const apiKey = ""; // API 金鑰會由環境自動提供
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                // --- 提示：在實際部署時，請務必使用後端服務器代理 API 請求以保護您的 API 金鑰 ---
+                const apiKey = "YOUR_GEMINI_API_KEY"; // 警告：請勿將 API 金鑰直接暴露在前端程式碼中！
+                // --------------------------------------------------------------------------
+
+                if (apiKey === "YOUR_GEMINI_API_KEY") {
+                    console.error("請替換為您的 Gemini API 金鑰");
+                    // 使用預設笑話作為展示
+                    const dummyJokes = {
+                        "jokes": [
+                            { "title": "醫生與病人", "content": "病人：「醫生，我得了健忘症怎麼辦？」 醫生：「沒關係，先付錢再說。」" },
+                            { "title": "工程師的煩惱", "content": "為什麼軟體工程師總是把萬聖節和聖誕節搞混？ 因為 Oct 31 == Dec 25！" },
+                            { "title": "一顆原子", "content": "一顆原子走進酒吧，說：「我好像弄丟了一個電子。」 酒保問：「你確定嗎？」 原子說：「我很正確定！」" }
+                        ]
+                    };
+                    setTimeout(() => {
+                         displayJokes(dummyJokes.jokes);
+                         loadingSpinner.classList.add('hidden');
+                         generateBtn.disabled = false;
+                    }, 1000);
+                    return;
+                }
+
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
                 const prompt = `請產生 3 則適合在專業人士聚會上講的輕鬆笑話。笑話內容不要太長。請用繁體中文回答，並使用 JSON 格式，結構如下：{"jokes": [{"title": "笑話標題1", "content": "笑話內容1"}, {"title": "笑話標題2", "content": "笑話內容2"}, {"title": "笑話標題3", "content": "笑話內容3"}]}`;
 
                 const payload = {
@@ -976,16 +958,11 @@
                 };
 
                 try {
-                    let response;
-                    for (let i = 0; i < 3; i++) { // 簡易重試機制
-                        response = await fetch(apiUrl, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        });
-                        if (response.ok) break;
-                        await new Promise(resolve => setTimeout(resolve, 1000 * Math.pow(2, i)));
-                    }
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
                     if (!response.ok) throw new Error(`API 請求失敗，狀態碼：${response.status}`);
 
                     const result = await response.json();
@@ -1028,30 +1005,48 @@
             // --- 分組查詢功能 ---
             const allMembers = {
                 'c': [
-                    '蕭慧莉', '劉憶萍', '黃慧娟', '洪淑英', '林莉蓉', '黃玉惠', '洪婉茹', '黃湘雲', '蘇淑芳', '沈佳容', '李佳明',
-                    '杜明道', '柯俊宏', '黃百春', '何佳宜', '孔雅雯', '林俊瑋', '曾雅鈴', '蔡麗華', '吳佩書', '林宜靜', '吳佩蓉',
-                    '吳宜家', '周小軒', '莊月琴', '蔡家綺', '蔡諪諼', '許馨文', '高婉菁', '方月貞', '許惠芳', '陳燕芬', '蕭琇丰',
-                    '張翠茹', '林雁飛', '張敬忠'
+                    { name: '蕭蕙莉', title: '護理長(N4)' }, { name: '劉憶萍', title: '部長' }, { name: '黃慧娟', title: '專員' }, { name: '洪淑英', title: '護理長(N4)' }, { name: '林莉蓉', title: '督導' },
+                    { name: '黃玉惠', title: '督導' }, { name: '洪婉茹', title: '護理長(N4)' }, { name: '黃湘雲', title: '護理長(N4)' }, { name: '蘇淑芳', title: '小組長' }, { name: '沈水雲', title: '代理護理長(N4)' },
+                    { name: '李佳容', title: '代理護理長(N4)' }, { name: '杜明道', title: '主治醫師' }, { name: '柯俊宏', title: '主任' }, { name: '黃百春', title: '小組長(N3)' }, { name: '何佳宜', title: '小組長(N4)' },
+                    { name: '孔雅雯', title: '副護理長(N4)' }, { name: '林俊璋', title: '督導' }, { name: '曾雅鈴', title: '副護理長(N4)' }, { name: '蔡麗華', title: '小組長(N4)' }, { name: '吳佩書', title: '小組長(N3)' },
+                    { name: '林宜靜', title: '小組長(N3)' }, { name: '吳佩蓉', title: '小組長(N3)' }, { name: '吳宜家', title: '副護理長(N3)' }, { name: '周小軒', title: '主治醫師' }, { name: '莊月慈', title: '小組長(N2)' },
+                    { name: '許家綺', title: '小組長(N2)' }, { name: '蔡語涵', title: '小組長(N2)' }, { name: '許馨文', title: '小組長(N3)' }, { name: '高婉菁', title: '組長(N4)' }, { name: '方月貞', title: '小組長(NP1)' },
+                    { name: '舒惠芳', title: '主治醫師' }, { name: '陳燕鈴', title: '小組長(N2)' }, { name: '蕭琇丰', title: '小組長(N3)' }, { name: '張蕙茹', title: '代理護理長(N3)' }, { name: '林雁飛', title: '組長' },
+                    { name: '張敬忠', title: '組長' }
                 ],
                 'a': [
-                    '邵詩媛','方素秋', '李建成', '楊幸修', '林莉娟', '莊淑欽', '謝淑芬', '謝佳芬', '楊美珠', '陳惠琦', '王秋蓮', '葉雪法',
-                    '邱仲慶', '蔡佩君', '蔡佩欣', '黃士哲', '謝永豐', '黃永男', '于思悦', '王思微', '林正雄', '曾靜珍', '吳靜儀',
-                    '蕭景星', '林佳琪', '陳佳飴', '紀宗瀚', '黃秀玲', '林欣縈', '陳昱瑾', '關蘭馨', '陳怡靜', '劉婉瑜', '李建賢',
-                    '林曉傑', '林芯如', '林益廷', '羅元廷', '唐怡君', '李林富'
+                    { name: '方素秋', title: '主任' }, { name: '李建成', title: '專員' }, { name: '楊幸修', title: '小組長' }, { name: '林莉娟', title: '組長' }, { name: '莊淑欽', title: '組長' },
+                    { name: '謝淑芬', title: '副組長' }, { name: '謝佳芬', title: '組長' }, { name: '楊美珠', title: '組長' }, { name: '陳惠琦', title: '小組長' }, { name: '王秋蓮', title: '組長' },
+                    { name: '葉雪法', title: '小組長' }, { name: '邵詩媛', title: '副院長' }, { name: '蔡佩君', title: '小組長' }, { name: '楊竣欽', title: '主任' }, { name: '黃士哲', title: '組長' },
+                    { name: '謝麗雯', title: '副組長' }, { name: '黃永男', title: '主任' }, { name: '于錫倩', title: '主任' }, { name: '王思薇', title: '護理長' }, { name: '林正雄', title: '專員' },
+                    { name: '曾毓珍', title: '副組長' }, { name: '吳靜儀', title: '行政' }, { name: '蕭景星', title: '主任' }, { name: '林佳琪', title: '副組長' }, { name: '陳佳銘', title: '組長' },
+                    { name: '紀宗瀚', title: '專員' }, { name: '黃秀玲', title: '組長' }, { name: '林欣蓁', title: '小組長' }, { name: '陳昱瑾', title: '科主任' }, { name: '關哲彥', title: '主治醫師' },
+                    { name: '陳怡靜', title: '小組長' }, { name: '劉婉榆', title: '小組長' }, { name: '李建賢', title: '小組長' }, { name: '林靖傑', title: '主治醫師' }, { name: '林芯如', title: '小組長' },
+                    { name: '林彣芷', title: '主任' }, { name: '羅元廷', title: '主治醫師' }, { name: '唐愉君', title: '小組長' }, { name: '李林富', title: '總技師' }
                 ],
                 'r': [
-                    '姚春枝', '唐惠庭', '李宜樺', '楊曉鐘', '陳美華', '姜郁成', '陳純純', '郭炳讓', '郭育淇', '曾麗娥', '黃妙玉',
-                    '陳妙玉', '李明練', '陳義憲', '歐軒甫', '黃慧娟', '廖光昭', '宋國華', '盧惟瑄', '丁思惠', '黃崇田', '黃靖鳳',
-                    '李佩汶', '朱逢源', '陳南丞', '陳宏睿', '黃柏豪', '劉怡茹', '陳又銘', '陳日為', '林哲光', '王弘偉', '林建麟',
-                    '林國彰', '蘇江翰', '涂冠杰', '曾崇賦', '田宇峯', '王哲川', '王鶴文'
+                    { name: '蘇春枝', title: '小組長(N2)' }, { name: '唐國庭', title: '組長' }, { name: '李宜樺', title: '組長' }, { name: '楊曉鏵', title: '護理長(N4)' }, { name: '陳美華', title: '小組長(N3)' },
+                    { name: '姜郁成', title: '主治醫師' }, { name: '陳瑩純', title: '小組長(N4)' }, { name: '郭炳讓', title: '主治醫師' }, { name: '郭育淇', title: '科主任' }, { name: '曾麗娥', title: '副護理長(N4)' },
+                    { name: '黃小容', title: '小組長' }, { name: '陳妙玉', title: '組長' }, { name: '李畊緯', title: '科主任' }, { name: '陳義憲', title: '科主任' }, { name: '歐軒甫', title: '主任' },
+                    { name: '黃慧娟', title: '組長' }, { name: '廖光明', title: '部長' }, { name: '宋國漳', title: '主治醫師' }, { name: '盧稚涵', title: '備任主治醫師' }, { name: '丁恩惠', title: '組長' },
+                    { name: '黃榮田', title: '小組長' }, { name: '黃曉鳳', title: '代理總藥師' }, { name: '李佩汶', title: '小組長' }, { name: '朱逢源', title: '部長' }, { name: '陳南丞', title: '科主任' },
+                    { name: '陳宏睿', title: '主治醫師' }, { name: '黃柏豪', title: '小組長' }, { name: '劉怡姍', title: '小組長(N4)' }, { name: '陳又銘', title: '主治醫師' }, { name: '陳日為', title: '主治醫師' },
+                    { name: '林哲光', title: '主治醫師' }, { name: '王弘偉', title: '主治醫師' }, { name: '林煒健', title: '主治醫師' }, { name: '李國彰', title: '主治醫師' }, { name: '蘇江翰', title: '備任主治醫師' },
+                    { name: '涂冠杰', title: '備任主治醫師' }, { name: '曾榮賦', title: '備任主治醫師' }, { name: '田宇峯', title: '院長' }, { name: '王哲川', title: '副院長' }, { name: '王覲文', title: '顧問' }
                 ],
                 'e': [
-                    '陳美伶', '彭姜姍', '鄭雅馨', '吳佩宜', '謝明宏', '吳素清', '洪順興', '李振福', '許秀浮', '吳秀浮', '陳富期',
-                    '林慧君', '曾建仁', '陳俊良', '林佳珍', '林思維', '胡慈容', '高宗典', '余亮興', '楊建邦', '陳邦碩', '施龍興',
-                    '廖仁傑', '余守純', '方惠娟', '蕭龍騰', '江瑞益', '張玉鳳', '鄭伊婷', '郭宗瑋', '陳春丞', '陳國銘', '黃玉雯',
-                    '李育緯', '黃育菁', '曾加偉', '簡劭君', '張明周', '鄭鴻卿', '劉家瑄', '洪維謙', '楊柏竣', '王柏竣'
+                    { name: '彭美惠', title: '護理長(N4)' }, { name: '陳姿伶', title: '總技師' }, { name: '鄭雅馨', title: '副護理長(N3)' }, { name: '吳佩宜', title: '護理長(N4)' }, { name: '謝安妮', title: '小組長(N4)' },
+                    { name: '吳泰清', title: '主任' }, { name: '洪順興', title: '部長' }, { name: '李振福', title: '小組長' }, { name: '吾秀蒂', title: '代理總技師' }, { name: '許雯萍', title: '小組長(NP1)' },
+                    { name: '康富期', title: '主任' }, { name: '林慧蓉', title: '護理長' }, { name: '曾建仁', title: '主治醫師' }, { name: '陳俊良', title: '科主任' }, { name: '林思維', title: '科主任' },
+                    { name: '林佳珍', title: '小組長(N3)' }, { name: '胡恭寧', title: '主治醫師' }, { name: '高旭儒', title: '主治醫師' }, { name: '余宗興', title: '科主任' }, { name: '楊道欣', title: '科主任' },
+                    { name: '施貿翔', title: '主治醫師' }, { name: '陳郁麗', title: '科主任' }, { name: '廖仁傑', title: '主治醫師' }, { name: '余守純', title: '組長' }, { name: '方惠姍', title: '小組長(N4)' },
+                    { name: '劉欣岳', title: '主治醫師' }, { name: '韓龍疇', title: '主治醫師' }, { name: '江瑞益', title: '組長' }, { name: '張鼎晨', title: '小組長' }, { name: '郭玉婷', title: '小組長' },
+                    { name: '陳春丞', title: '主治醫師' }, { name: '陳經國', title: '主治醫師' }, { name: '鄭宛瑢', title: '小組長(N3)' }, { name: '黃玉婷', title: '小組長(N2)' }, { name: '李育諭', title: '主治醫師' },
+                    { name: '曾加儒', title: '副護理長(N2)' }, { name: '閻姵君', title: '主治醫師' }, { name: '曾妍鳳', title: '小組長(N4)' }, { name: '張明閎', title: '主治醫師' }, { name: '鄭鴻翔', title: '主治醫師' },
+                    { name: '劉家瑄', title: '小組長(N4)' }, { name: '洪綸吾', title: '主治醫師' }, { name: '楊傑宇', title: '主治醫師' }, { name: '王柏竣', title: '備任主治醫師' }
                 ]
             };
+
 
             const groupInfo = {
                 'c': { name: 'C 組', theme: '擴大長照服務 深耕社區醫療', id: 'group-card-c' },
@@ -1067,41 +1062,54 @@
             function performSearch() {
                 const query = searchInput.value.trim();
                 
-                // 清除先前的高亮效果
+                // Clear previous highlights and results
                 document.querySelectorAll('.group-card').forEach(card => card.classList.remove('highlight'));
                 searchResultDiv.innerHTML = '';
 
                 if (query === '') {
                     searchResultDiv.textContent = '請輸入姓名進行查詢';
-                    searchResultDiv.className = 'mt-4 text-center font-semibold text-lg text-gray-500 min-h-[1.5rem]';
+                    searchResultDiv.className = 'mt-4 text-center font-semibold text-lg text-gray-500 min-h-[3rem]';
                     return;
                 }
 
-                let found = false;
+                const foundResults = [];
                 for (const groupKey in allMembers) {
-                    if (allMembers[groupKey].includes(query)) {
-                        const info = groupInfo[groupKey];
-                        searchResultDiv.innerHTML = `
-                            <span class="text-special-blue">${query} 您好，您被分配在</span>
-                            <br class="sm:hidden">
-                            <span class="text-special-blue font-bold">${info.name}：${info.theme}</span>
-                        `;
-                        searchResultDiv.className = 'mt-4 text-center font-semibold text-lg min-h-[1.5rem]';
-                        document.getElementById(info.id).classList.add('highlight');
-                        found = true;
-                        break;
-                    }
+                    allMembers[groupKey].forEach(member => {
+                        if (member.name === query) {
+                            foundResults.push({ ...member, groupKey });
+                        }
+                    });
                 }
 
-                if (!found) {
+                if (foundResults.length > 0) {
+                    const resultsHtml = foundResults.map(result => {
+                        const info = groupInfo[result.groupKey];
+                        const card = document.getElementById(info.id);
+                        if(card) {
+                            card.classList.add('highlight');
+                            // Smooth scroll to the card
+                            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                        return `<div class="p-3 border-b last:border-b-0 text-left sm:text-center">
+                                    <span class="font-bold text-special-blue">${result.name} (${result.title})</span>
+                                    <span class="text-gray-600">，您好！您被分配在</span>
+                                    <br class="sm:hidden">
+                                    <span class="font-semibold text-special-blue">${info.name}：${info.theme}</span>
+                                </div>`;
+                    }).join('');
+                    
+                    searchResultDiv.innerHTML = `<div class="border rounded-lg bg-white shadow-inner">${resultsHtml}</div>`;
+                    searchResultDiv.className = 'mt-4 text-lg min-h-[3rem]';
+
+                } else {
                     searchResultDiv.textContent = `查無 "${query}" 的分組資訊`;
-                    searchResultDiv.className = 'mt-4 text-center font-semibold text-lg text-red-500 min-h-[1.5rem]';
+                    searchResultDiv.className = 'mt-4 text-center font-semibold text-lg text-red-500 min-h-[3rem]';
                 }
             }
             
             searchBtn.addEventListener('click', performSearch);
             searchInput.addEventListener('keyup', (event) => {
-                 if (event.key === 'Enter') {
+                if (event.key === 'Enter') {
                     performSearch();
                 }
             });
@@ -1109,4 +1117,3 @@
     </script>
 </body>
 </html>
-
